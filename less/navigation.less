@@ -3,27 +3,25 @@
 nav {
     max-width: 1000px;
     margin: 0 auto;
-    display: flex;
+    .centering();
     align-content: center;
-    justify-content: center;
     flex-direction: column;
     background-color: @footer-background;
 
     h1 {
         font-size: 4rem;
-        text-align: center;
-        padding: 10px 0;
+        .textpadding ();
     }
 
     .nav-items {
-        display: flex;
-        justify-content: center;
+        .centering();
 
 
         a {
             text-decoration: none;
             font-size: 1.6rem;
             padding: 10px 1.5%;
+            color: @header-font-color;
         }
     }
 }
