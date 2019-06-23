@@ -34,13 +34,24 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+	Adaptive website include breakpoints but define widths and fonts in pixels. Fully responsive websites not only incorporate breakpoints, but also use percentages for widths (including horizontal padding and margins), and ems or rems for font sizes.
+
+
 2. Describe what it means to be mobile first vs desktop first.
+
+        Mobile first means to design a webpage for a mobile viewport first, and then incorporate "min-width" breakpoints to make use of the additional screen real estate until you reach desktop size. Desktop first would take the opposite approach and start with the desktop viewport first and then incorporate "max-width" breakpoints as the screen shrunk. Which way you design is usually up to your team and how users interact with your webpage/application. For example if the product is an enterprise product that uses will be using mainly on their desktop, a desktop first approach would make the most sense.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+        It lets us work in base 10 because 62.5% of the standard browser font is 10px. Using 62.5% instead of 10px also allows the end user to adjust the font size via their browser, increasing accessibility.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+        Preprocessing add additional functionality on to CSS by introducing functions, variables, mix-ins and more. These new functions give CSS more power, and help to keep the code more organized. The output of preprocessing ends with a regular CSS stylesheet, so there is no negative impact on the browser and load times.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+        My favorite concept in preprocessing is nesting and importing since they keep the code tidier. I imagine this will come in even more handy on team projects. Mixins give me the most trouble, just because I cannot find too many use cases for them.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
