@@ -8,6 +8,11 @@ nav {
     flex-direction: column;
     background-color: @footer-background;
 
+    @media @mobile {
+        max-width: 500px;
+    }
+
+
     h1 {
         font-size: 4rem;
         .textpadding ();
