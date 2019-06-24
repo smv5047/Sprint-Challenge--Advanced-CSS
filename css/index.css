@@ -159,10 +159,15 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+  margin-top: 100px;
 }
 nav {
-  max-width: 1000px;
-  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  opacity: 0.8;
+  width: 60%;
+  margin: 0 20%;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -171,7 +176,8 @@ nav {
 }
 @media (max-width: 500px) {
   nav {
-    max-width: 500px;
+    width: 95%;
+    margin: 0 2.5%;
   }
 }
 nav h1 {
@@ -186,8 +192,14 @@ nav .nav-items {
 nav .nav-items a {
   text-decoration: none;
   font-size: 1.6rem;
-  padding: 10px 1.5%;
+  padding: 10px 1.75%;
   color: #23293B;
+  width: 10%;
+}
+nav .nav-items a:hover {
+  transition: color 0.25s ease-in 0.25s;
+  text-decoration: underline;
+  color: #454A59;
 }
 footer {
   color: #22283B;
