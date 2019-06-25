@@ -1,1 +1,21 @@
 // Mixins Here
+
+.centering () {
+    display: flex;
+    justify-content: center;
+}
+
+.textpadding () {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.buttonstyle (@borderrad, @width) {
+    border-radius: @borderrad;
+    width: @width;
+
+    &:hover {
+        color: @header-font-color;
+        background-color: white;
+    }
+}

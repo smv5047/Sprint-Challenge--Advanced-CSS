@@ -1,1 +1,65 @@
 // Navigation code here
+
+.nav-bar {
+    max-width: 1000px;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+ 
+    @media @mobile {
+        max-width: 500px;
+    }
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    opacity: .8;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    .centering();
+    align-content: center;
+    flex-direction: column;
+    background-color: @footer-background;
+    
+
+    
+
+    @media @mobile {
+        width: 100%;
+        
+    }
+
+
+    h1 {
+        font-size: 4rem;
+        .textpadding ();
+    }
+
+    .nav-items {
+        .centering();
+
+
+        a {
+            text-decoration: none;
+            font-size: 1.6rem;
+            padding: 10px 1%;
+            color: @header-font-color;
+            text-align: center;
+            white-space: nowrap;
+
+            
+           
+
+        }
+        a:hover {
+            transition: color .25s ease-in .25s;
+            text-decoration: underline;
+            color: @nav-font; 
+        }
+    }
+}
